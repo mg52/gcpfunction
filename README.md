@@ -2,7 +2,7 @@
 
 GCP function demo with terraform.
 
-## Local Setup
+## Setup
 ```bash
 gcloud auth application-default login
 
@@ -12,6 +12,16 @@ terraform init
 
 terraform apply
 ```
+
+## Local Run
+```bash
+export FUNCTION_TARGET=router
+
+cd cmd
+go run main.go
+```
+
+##
 
 Tutorial: https://cloud.google.com/functions/docs/create-deploy-http-go
 
